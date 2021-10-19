@@ -11,7 +11,7 @@ if exists("syntax_on")
 endif
 let g:colors_name="Moe"
 
-" GuiFor(group, guibg, guifg, gui)
+" call GuiFor(group, guibg, guifg, gui)
 function! GuiFor(group, ...)
   let histring = 'hi ' . a:group . ' '
 
@@ -61,133 +61,133 @@ let moe_dark_white   = '0xeeeeee'
 " --------------------------------
 " Editor settings
 " --------------------------------
-GuiFor("Normal", moe_dark_white)
-" GuiFor("Cursor", )
-" GuiFor("CursorLine", )
-GuiFor("LineNr", moe_yellow)
-" GuiFor("CursorLineNR", )
+call GuiFor("Normal", moe_dark_white)
+" call GuiFor("Cursor", )
+" call GuiFor("CursorLine", )
+call GuiFor("LineNr", moe_yellow)
+" call GuiFor("CursorLineNR", )
 
 " -----------------
 " - Number column -
 " -----------------
-" GuiFor("CursorColumn", )
-" GuiFor("FoldColumn", )
-" GuiFor("SignColumn", )
-" GuiFor("Folded", )
+" call GuiFor("CursorColumn", )
+" call GuiFor("FoldColumn", )
+" call GuiFor("SignColumn", )
+" call GuiFor("Folded", )
 
 " -------------------------
 " - Window/Tab delimiters - 
 " -------------------------
-GuiFor("VertSplit", moe_green)
-" GuiFor("ColorColumn", )
-GuiFor("TabLine", moe_dark_white)
-GuiFor("TabLineFill", moe_dark_white, moe_black)
-GuiFor("TabLineSel", moe_magenta)
+call GuiFor("VertSplit", moe_green)
+" call GuiFor("ColorColumn", )
+call GuiFor("TabLine", moe_dark_white)
+call GuiFor("TabLineFill", moe_dark_white, moe_black)
+call GuiFor("TabLineSel", moe_magenta)
 
 " -------------------------------
 " - File Navigation / Searching -
 " -------------------------------
-GuiFor("Directory", moe_blue)
-GuiFor("Search", moe_black, moe_dark_red)
-GuiFor("IncSearch", moe_black, moe_green)
+call GuiFor("Directory", moe_blue)
+call GuiFor("Search", moe_black, moe_dark_red)
+call GuiFor("IncSearch", moe_black, moe_green)
 
 " -----------------
 " - Prompt/Status -
 " -----------------
-" GuiFor("StatusLine", )
-" GuiFor("StatusLineNC", )
-" GuiFor("WildMenu", )
-" GuiFor("Question", )
-" GuiFor("Title", )
-" GuiFor("ModeMsg", )
-" GuiFor("MoreMsg", )
+" call GuiFor("StatusLine", )
+" call GuiFor("StatusLineNC", )
+" call GuiFor("WildMenu", )
+" call GuiFor("Question", )
+" call GuiFor("Title", )
+" call GuiFor("ModeMsg", )
+" call GuiFor("MoreMsg", )
 
 " --------------
 " - Visual aid -
 " --------------
-GuiFor("MatchParen", moe_white, 'none', 'bold')
-GuiFor("Visual", moe_black, moe_dark_red)
-" GuiFor("VisualNOS", )
-GuiFor("NonText", moe_dark_yellow)
+call GuiFor("MatchParen", moe_white, 'none', 'bold')
+call GuiFor("Visual", moe_black, moe_dark_red)
+" call GuiFor("VisualNOS", )
+call GuiFor("NonText", moe_dark_yellow)
 
-GuiFor("Todo", moe_red)
-GuiFor("Underlined", moe_white)
-GuiFor("Error", moe_white, moe_dark_red)
-GuiFor("ErrorMsg", moe_red)
-GuiFor("WarningMsg", moe_dark_yellow)
-GuiFor("Ignore", moe_gray)
-GuiFor("SpecialKey", moe_dark_yellow)
+call GuiFor("Todo", moe_red)
+call GuiFor("Underlined", moe_white)
+call GuiFor("Error", moe_white, moe_dark_red)
+call GuiFor("ErrorMsg", moe_red)
+call GuiFor("WarningMsg", moe_dark_yellow)
+call GuiFor("Ignore", moe_gray)
+call GuiFor("SpecialKey", moe_dark_yellow)
 
 " --------------------------------
 " Variable types
 " --------------------------------
-GuiFor("Constant", moe_dark_red)
-GuiFor("String", moe_green)
-GuiFor("StringDelimiter", moe_dark_green)
-GuiFor("Character", moe_dark_yellow)
-GuiFor("Number", moe_dark_magenta)
-GuiFor("Boolean", moe_dark_magenta)
-GuiFor("Float", moe_dark_magenta)
+call GuiFor("Constant", moe_dark_red)
+call GuiFor("String", moe_green)
+call GuiFor("StringDelimiter", moe_dark_green)
+call GuiFor("Character", moe_dark_yellow)
+call GuiFor("Number", moe_dark_magenta)
+call GuiFor("Boolean", moe_dark_magenta)
+call GuiFor("Float", moe_dark_magenta)
 
-GuiFor("Identifier", moe_dark_white)
-GuiFor("Function", moe_blue)
+call GuiFor("Identifier", moe_dark_white)
+call GuiFor("Function", moe_blue)
 
 " --------------------------------
 " Language constructs
 " --------------------------------
-GuiFor("Statement", )
-GuiFor("Conditional", moe_red)
-GuiFor("Repeat", moe_red)
-GuiFor("Label", moe_red)
-GuiFor("Operator", moe_white, 'none', 'bold')
-GuiFor("Keyword", moe_red)
-GuiFor("Exception", moe_red)
-GuiFor("Comment", moe_gray)
+call GuiFor("Statement", )
+call GuiFor("Conditional", moe_red)
+call GuiFor("Repeat", moe_red)
+call GuiFor("Label", moe_red)
+call GuiFor("Operator", moe_white, 'none', 'bold')
+call GuiFor("Keyword", moe_red)
+call GuiFor("Exception", moe_red)
+call GuiFor("Comment", moe_gray)
 
-GuiFor("Special", moe_dark_magenta)
-GuiFor("SpecialChar", moe_magenta)
-GuiFor("Tag", moe_dark_magenta)
-GuiFor("Delimiter", moe_white)
-GuiFor("SpecialComment", moe_green)
-GuiFor("Debug", moe_dark_yellow)
+call GuiFor("Special", moe_dark_magenta)
+call GuiFor("SpecialChar", moe_magenta)
+call GuiFor("Tag", moe_dark_magenta)
+call GuiFor("Delimiter", moe_white)
+call GuiFor("SpecialComment", moe_green)
+call GuiFor("Debug", moe_dark_yellow)
 
 " ----------
 " - C like -
 " ----------
-GuiFor("PreProc", moe_dark_magenta)
-GuiFor("Include", moe_dark_red)
-GuiFor("Define", moe_dark_red)
-GuiFor("Macro", moe_dark_red)
-GuiFor("PreCondit", moe_dark_red)
+call GuiFor("PreProc", moe_dark_magenta)
+call GuiFor("Include", moe_dark_red)
+call GuiFor("Define", moe_dark_red)
+call GuiFor("Macro", moe_dark_red)
+call GuiFor("PreCondit", moe_dark_red)
 
-GuiFor("Type", moe_blue, 'none', 'bold')
-GuiFor("StorageClass", moe_blue, 'none', 'bold')
-GuiFor("Structure", moe_blue, 'none', 'bold')
-GuiFor("Typedef", moe_blue, 'none', 'bold')
+call GuiFor("Type", moe_blue, 'none', 'bold')
+call GuiFor("StorageClass", moe_blue, 'none', 'bold')
+call GuiFor("Structure", moe_blue, 'none', 'bold')
+call GuiFor("Typedef", moe_blue, 'none', 'bold')
 
 " --------------------------------
 " Diff
 " --------------------------------
-GuiFor("DiffAdd", moe_dark_green)
-GuiFor("DiffChange", moe_dark_white)
-GuiFor("DiffDelete", moe_dark_red)
-GuiFor("DiffText", moe_dark_white, moe_gray)
+call GuiFor("DiffAdd", moe_dark_green)
+call GuiFor("DiffChange", moe_dark_white)
+call GuiFor("DiffDelete", moe_dark_red)
+call GuiFor("DiffText", moe_dark_white, moe_gray)
 
 " --------------------------------
 " Completion menu
 " --------------------------------
-GuiFor("Pmenu", moe_dark_white, moe_gray)
-GuiFor("PmenuSel", moe_white, moe_dark_red)
-GuiFor("PmenuSbar", 'none', moe_red)
-" GuiFor("PmenuThumb", )
+call GuiFor("Pmenu", moe_dark_white, moe_gray)
+call GuiFor("PmenuSel", moe_white, moe_dark_red)
+call GuiFor("PmenuSbar", 'none', moe_red)
+" call GuiFor("PmenuThumb", )
 
 " --------------------------------
 " Spelling
 " --------------------------------
-" GuiFor("SpellBad", )
-" GuiFor("SpellCap", )
-" GuiFor("SpellLocal", )
-" GuiFor("SpellRare", )
+" call GuiFor("SpellBad", )
+" call GuiFor("SpellCap", )
+" call GuiFor("SpellLocal", )
+" call GuiFor("SpellRare", )
 
 "--------------------------------------------------------------------
 " Specific settings                                                 |
