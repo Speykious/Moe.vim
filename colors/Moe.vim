@@ -15,15 +15,15 @@ let g:colors_name="Moe"
 function! s:GuiFor(group, ...)
   let histring = 'hi ' . a:group . ' '
 
-  if strlen(a:1)
+  if a:0 > 0 && strlen(a:1)
     let histring .= 'guibg=' . a:1 . ' '
   endif
 
-  if strlen(a:2)
+  if a:0 > 1 && strlen(a:2)
     let histring .= 'guifg=' . a:2 . ' '
   endif
 
-  if a:0 >= 3 && strlen(a:3)
+  if a:0 > 2 && strlen(a:3)
     let histring .= 'gui=' . a:3 . ' '
   endif
 
